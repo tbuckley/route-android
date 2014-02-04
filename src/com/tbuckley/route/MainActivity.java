@@ -3,6 +3,7 @@ package com.tbuckley.route;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.KeyEvent;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.webkit.WebSettings;
@@ -17,6 +18,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         getWindow().requestFeature(Window.FEATURE_NO_TITLE);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LOW_PROFILE);
         
         mWebView = new WebView(this);
         WebSettings webSettings = mWebView.getSettings();
