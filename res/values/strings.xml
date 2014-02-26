@@ -4,5 +4,6 @@
     <string name="app_name">Route</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="app_id">F1CEDD59</string>
 
 </resources>
